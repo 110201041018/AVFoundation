@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D4D6FB024639E9A00B8CF23 /* IMG_2735.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1D4D6FAF24639E9A00B8CF23 /* IMG_2735.mp4 */; };
+		1D4D6FB22463BC9B00B8CF23 /* MaiDou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D4D6FB12463BC9B00B8CF23 /* MaiDou.mp3 */; };
+		1D4D6FB42463ECC500B8CF23 /* SuperMarioBros.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D4D6FB32463ECC500B8CF23 /* SuperMarioBros.mp3 */; };
+		1D4D6FB62463F0EA00B8CF23 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D6FB52463F0EA00B8CF23 /* EditViewController.swift */; };
 		1D5C740E24614EB6005475EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C740D24614EB6005475EF /* AppDelegate.swift */; };
 		1D5C741224614EB6005475EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C741124614EB6005475EF /* ViewController.swift */; };
 		1D5C741524614EB6005475EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D5C741324614EB6005475EF /* Main.storyboard */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D4D6FAF24639E9A00B8CF23 /* IMG_2735.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_2735.mp4; sourceTree = "<group>"; };
+		1D4D6FB12463BC9B00B8CF23 /* MaiDou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MaiDou.mp3; sourceTree = "<group>"; };
+		1D4D6FB32463ECC500B8CF23 /* SuperMarioBros.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SuperMarioBros.mp3; sourceTree = "<group>"; };
+		1D4D6FB52463F0EA00B8CF23 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		1D5C740A24614EB6005475EF /* AVFoundationAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D5C740D24614EB6005475EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D5C741124614EB6005475EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,10 +71,14 @@
 				1D5C740D24614EB6005475EF /* AppDelegate.swift */,
 				1D5C742424615040005475EF /* IMG_0830.MOV */,
 				1D5C741124614EB6005475EF /* ViewController.swift */,
+				1D4D6FB52463F0EA00B8CF23 /* EditViewController.swift */,
+				1D4D6FAF24639E9A00B8CF23 /* IMG_2735.mp4 */,
 				1D5C741324614EB6005475EF /* Main.storyboard */,
 				1D5C741624614EB9005475EF /* Assets.xcassets */,
 				1D5C741824614EB9005475EF /* LaunchScreen.storyboard */,
 				1D5C741B24614EB9005475EF /* Info.plist */,
+				1D4D6FB12463BC9B00B8CF23 /* MaiDou.mp3 */,
+				1D4D6FB32463ECC500B8CF23 /* SuperMarioBros.mp3 */,
 			);
 			path = AVFoundationAction;
 			sourceTree = "<group>";
@@ -138,9 +150,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D5C741A24614EB9005475EF /* LaunchScreen.storyboard in Resources */,
+				1D4D6FB22463BC9B00B8CF23 /* MaiDou.mp3 in Resources */,
 				1D5C741724614EB9005475EF /* Assets.xcassets in Resources */,
+				1D4D6FB024639E9A00B8CF23 /* IMG_2735.mp4 in Resources */,
 				1D5C741524614EB6005475EF /* Main.storyboard in Resources */,
 				1D5C742524615040005475EF /* IMG_0830.MOV in Resources */,
+				1D4D6FB42463ECC500B8CF23 /* SuperMarioBros.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +168,7 @@
 			files = (
 				1D5C741224614EB6005475EF /* ViewController.swift in Sources */,
 				1D5C740E24614EB6005475EF /* AppDelegate.swift in Sources */,
+				1D4D6FB62463F0EA00B8CF23 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
