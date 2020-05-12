@@ -55,20 +55,19 @@ class EditViewController: UIViewController {
         
         try?videoCompostiontrack?.insertTimeRange(theTime, of: videoAssetTrack!, at: CMTime.zero)
         //为音频轨道放入音频
-        let vex = CMTime.init(value: CMTimeValue(e), timescale: CMTimeScale(videoAssetTrack!.nominalFrameRate)).seconds - audioAssetTrack2!.timeRange.duration.seconds
-        let theTimeAudio = CMTimeRangeMake(start: CMTime.zero, duration: CMTime.init(value: CMTimeValue(6.48275), timescale: CMTimeScale(1.0)))
+        let theTimeAudio = CMTimeRangeMake(start: CMTime.zero, duration: CMTime.init(value: CMTimeValue(e*0.65), timescale: CMTimeScale(videoAssetTrack!.nominalFrameRate)))
         try?audioCompostiontrack?.insertTimeRange(theTimeAudio, of: audioAssetTrack!, at: CMTime.zero)
         //为音频轨道放入音频2
         let theTimeAudio2 = CMTimeRangeMake(start: CMTime.zero, duration: (audioAssetTrack2?.timeRange.duration)!)
-        let starTime2 = v_endTime.seconds - vex
-        let st2 = CMTime.init(value: CMTimeValue(6.48275), timescale: CMTimeScale(1.0))
+        
+        let st2 = CMTime.init(value: CMTimeValue(e*0.65), timescale: CMTimeScale(videoAssetTrack!.nominalFrameRate))
         print(st2.seconds)
         try?audioCompositiontrack2?.insertTimeRange(theTimeAudio2, of: audioAssetTrack2!, at: st2)
         
         
         
     
-        let exporter = AVAssetExportSession.init(asset: composotion, presetName: AVAssetExportPreset1280x720)
+        let exporter = AVAssetExportSession.init(asset: composotion, presetName: AVAssetExportPresetHighestQuality)
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
         let filePath = path!+"/test.mp4"
         try?FileManager.default.removeItem(atPath: filePath)
@@ -88,10 +87,6 @@ class EditViewController: UIViewController {
                 self.playIt(url: URL.init(fileURLWithPath: filePath))
             }
         })
-        
-        
-        
-        
     }
     
     func playIt(url:URL) {

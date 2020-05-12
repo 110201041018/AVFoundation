@@ -168,9 +168,9 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         let hasProtect = mainAsset.hasProtectedContent //是否受保护
         print("hasProtect:\(hasProtect)")
         
-        
-        let compatible = mainAsset.isCompatibleWithSavedPhotosAlbum
+        let compatible = mainAsset.isCompatibleWithSavedPhotosAlbum//是否可以写入相册
         print("是否可以写入相册：\(compatible)")
+        
         
         
     }
@@ -183,8 +183,7 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
             print("mediaType:\(track.mediaType.rawValue)")
             print("nominalFrameRate:\(track.nominalFrameRate)")
             print("minFrameDuration:\(track.minFrameDuration.seconds)")
-            print("formatDescription:\(track.formatDescriptions)\n\n\n\n\n\\n\n\n\n\n\n")
-            
+            print("formatDescription:\(track.formatDescriptions)")
         }
     }
     
